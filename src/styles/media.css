@@ -1,0 +1,46 @@
+@media (max-width: 1380px) {
+  .container {
+    max-width: 874px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: calc(100vw / 1024 * 10);
+  }
+
+  .container {
+    max-width: 668px;
+  }
+
+  .controller {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  .container {
+    max-width: 546px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: calc(100vw / 576 * 10);
+  }
+
+  .container {
+    max-width: unset;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: calc(100vw / 450 * 10);
+  }
+}

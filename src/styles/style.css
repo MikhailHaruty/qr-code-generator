@@ -1,0 +1,177 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 1920 * 10);
+}
+
+:root {
+  --header-bg: #1f2937;
+  --text-color: #fff;
+  --content-bg: #111827;
+  --items-bg: #374151;
+  --ui-bg: #2563eb;
+  --ui-bg-active: #0038b1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--content-bg);
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  padding: 2rem 0;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.header-image {
+  margin-right: 0.5rem;
+}
+
+.header-icon {
+  width: 25px;
+}
+
+/* Content */
+
+.content {
+  padding: 7rem 0;
+}
+
+.content-title {
+  display: block;
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content-descr {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.controller {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.controller-input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background-color: var(--items-bg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.controller-input::placeholder {
+  color: #e0e0e0;
+}
+
+.controller-input:focus-visible {
+  outline: 2px solid var(--ui-bg);
+}
+
+.controller-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background-color: var(--ui-bg);
+  outline: 3px solid transparent;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.controller-button:hover, .controller-button:focus-visible {
+  background-color: var(--ui-bg-active);
+  outline-color: var(--ui-bg);
+}
+
+.qr-container {
+  padding-top: 5rem;
+}
+
+.qr-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.qr-link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 30rem;
+}
+
+.qr-link img {
+  display: inline;
+}
+
+.qr-image {
+  display: block;
+  margin: 0 auto;
+  width: 30rem;
+}
