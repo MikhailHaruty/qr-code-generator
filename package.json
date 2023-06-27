@@ -2,7 +2,7 @@
   "homepage": "https://mikhailharuty.github.io/qr-code-generator",
   "name": "qr-code-generator",
   "version": "1.0.0",
-  "description": "Instant creation of a QR code with any content",
+  "description": "⚡ Instant creation of a QR code with any content",
   "author": "",
   "license": "ISC",
   "dependencies": {
